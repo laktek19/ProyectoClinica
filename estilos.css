@@ -1,0 +1,463 @@
+:root {
+  --bg: #ecf0f5;
+  --header-bg: #f4f7fb;
+  --text: #2c3e50;
+  --muted: #5b6b7d;
+  --border: #dce4ec;
+  --accent: #1f4e8a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.cabecera {
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.Icono img {
+  width: 120px;
+}
+
+.contentedorCabecera {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+}
+
+.icono {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tituloMarca {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.subtituloMarca {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  font-size: 0.95rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 8px 0;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link--active {
+  color: var(--text);
+  border-bottom: 2px solid var(--accent);
+}
+
+.nav {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.contenedorPrincipal {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.seccion1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.citas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dde8ee;
+}
+
+.seccion1 .contenedorTexto {
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.seccion1 .contentedorImagen {
+  background-color: #829db2;
+  padding: 30px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.contentedorImagen img {
+  border-radius: 20px;
+}
+
+.personalMedico {
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+}
+
+.personalMedico h1 {
+  margin: 0;
+  width: 100%;
+}
+
+.nuestroPersonal {
+  width: 80%;
+}
+
+.tarjetaDoctor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.tarjeta1 {
+  background-color: aliceblue;
+  margin: 20px;
+  border-radius: 20px;
+  width: 90%;
+  height: 90%;
+  text-align: left;
+}
+
+.tarjeta1 h4 {
+  margin: 0;
+  padding: 0px;
+}
+
+.tarjeta1 img {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footerTarjeta {
+  padding: 0px 30px;
+}
+
+.botonDetalles {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 73, 114, 1) 0%,
+    rgba(10, 69, 109, 1) 50%,
+    rgba(37, 70, 101, 1) 100%
+  );
+  border-radius: 20px;
+}
+
+.conocerServicios {
+  background-color: rgb(247, 250, 253);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+}
+
+.carrusel {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  overflow-x: auto;
+  padding: 20px;
+  background-color: rgb(234, 245, 255);
+  border-radius: 20px;
+}
+
+.servicio {
+  padding: 30px;
+  margin: 10px auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicio img {
+  width: 300px;
+  height: 200px;
+}
+
+.servicio p,li{
+  text-align: left;
+}
+
+.carrusel img {
+  border-radius: 20px;
+}
+
+.carrusel::-webkit-scrollbar {
+  height: 7px;
+  scrollbar-width: 5px;
+}
+
+.carrusel::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: rgba(14, 73, 114, 1);
+}
+
+/* Footer styles */
+.piePagina {
+  background: #e6eaec;
+  color: var(--text);
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.piePagina .contenedorPiePagina {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 24px;
+}
+.piePagina .parteSuperiorFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 280px;
+  gap: 24px;
+  align-items: start;
+}
+.marcaFooter {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tituloFooter {
+  font-size: 1rem;
+}
+.subtituloFooter {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.notaFooter {
+  color: var(--muted);
+  margin: 10px 0 6px 0;
+}
+.redesSociales .icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--accent);
+  margin-right: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+}
+.centroFooter {
+  display: flex;
+  gap: 24px;
+}
+.columnaFooter h4 {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+}
+.columnaFooter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.columnaFooter li {
+  margin-bottom: 6px;
+}
+.columnaFooter a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.derechaFooter h4 {
+  margin: 0 0 8px 0;
+}
+.parteInferiorFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.verDetalles {
+  margin-top: 50px;
+}
+
+.marcaFooter img {
+  width: 100px;
+}
+
+/*SEDES*/
+
+.contenedorSedes {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sede {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  border: 1px solid #c9d1e8;
+  padding: 60px;
+  margin: 40px 20px;
+  background: white;
+}
+
+.imagenSede img {
+  width: 500px;
+  height: auto;
+  display: block;
+}
+
+.infoSede h2 {
+  font-size: 32px;
+  color: var(--accent);
+  margin-bottom: 25px;
+}
+.infoSede p {
+  font-size: 20px;
+  color: #69789e;
+  line-height: 1.5;
+}
+
+.botones {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.botonPlomo {
+  text-decoration: none;
+  color: #626b6e;
+  padding: 10px 25px;
+  background-color: #cfd4d7;
+  border-radius: 20px;
+}
+
+.btnAzul {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 6px;
+  text-decoration: none;
+  width: 45%;
+  height: 40px;
+  color: whitesmoke;
+  padding: 10px 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 73, 114, 1) 0%,
+    rgba(10, 69, 109, 1) 50%,
+    rgba(37, 70, 101, 1) 100%
+  );
+  border-radius: 30px;
+}
+
+.btnAzul{
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 6px;
+  text-decoration: none;
+  height: 40px;
+  color: whitesmoke;
+  padding: 10px 25px;
+  background: linear-gradient(
+    180deg,
+    rgba(14, 73, 114, 1) 0%,
+    rgba(10, 69, 109, 1) 50%,
+    rgba(37, 70, 101, 1) 100%
+  );
+  border-radius: 30px;
+}
+
+.tituloSedes {
+  text-align: center;
+  font-size: 48px;
+  color: var(--accent);
+  margin: 50px 0;
+  font-family: Arial, sans-serif;
+}
+
+.infoSede {
+  width: 350px;
+  text-align: left;
+}
+.imglogo img {
+  height: 60px;
+  width: auto;
+}
+
+.imglogo {
+  position: relative;
+}
+
+.logoFooterImg {
+  width: 180px;
+  height: auto;
+  display: block;
+}
