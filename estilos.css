@@ -24,6 +24,7 @@ body {
   color: var(--text);
 }
 
+/*HEADER*/
 .cabecera {
   background: var(--header-bg);
   border-bottom: 1px solid var(--border);
@@ -68,6 +69,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
 }
 
 .nav__item {
@@ -87,12 +92,7 @@ body {
   border-bottom: 2px solid var(--accent);
 }
 
-.nav {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  width: 100%;
-}
+/*Contenedor principal*/
 
 .contenedorPrincipal {
   margin: 0 auto;
@@ -224,6 +224,11 @@ body {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.servicio h3{
+  text-align: center;
 }
 
 .servicio img {
@@ -231,8 +236,8 @@ body {
   height: 200px;
 }
 
-.servicio p,li{
-  text-align: left;
+.servicioTxt{
+  padding: 10px;
 }
 
 .carrusel img {
@@ -460,4 +465,392 @@ body {
   width: 180px;
   height: auto;
   display: block;
+}
+
+/* BANNER */
+
+.banner{
+background:#d8e8f1;
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:40px 60px;
+}
+
+.banner-texto{
+width:45%;
+}
+
+.banner-texto h1{
+color:#123a5a;
+font-size:50px;
+margin-bottom:15px;
+}
+
+.banner-texto p{
+color:#123a5a;
+margin-bottom:25px;
+line-height:1.5;
+}
+
+.btn{
+background:#00527d;
+color:white;
+text-decoration:none;
+padding:12px 25px;
+border-radius:25px;
+}
+
+.banner-imagen img{
+width:450px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* BUSCADOR */
+
+.buscador{
+text-align:center;
+margin:40px 0;
+}
+
+.buscador input{
+width:550px;
+padding:16px;
+border:none;
+border-radius:25px;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+/* ESPECIALIDADES */
+
+.especialidades{
+padding:20px 60px 60px;
+}
+
+.especialidades h2{
+text-align:center;
+color:#123a5a;
+margin-bottom:35px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,.12);
+transition:0,3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.emoji{
+font-size:45px;
+margin-bottom:10px;
+}
+
+.card h3{
+color:#123a5a;
+margin-bottom:10px;
+}
+
+.card p{
+color:#444;
+}
+
+/*ESTILOS SERVICIOS*/
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.services-section {
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface);
+  padding: 36px;
+}
+
+.service-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 14px 24px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+.cards-row {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface-strong);
+  overflow: hidden;
+  align-items: stretch;
+  min-height: 360px;
+}
+
+.card-image {
+  width: 48%;
+  min-height: 360px;
+  max-width: 560px;
+  background: #eef4fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  flex: 1;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.service-card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text-muted);
+}
+
+.service-card li {
+  margin-bottom: 10px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
+
+/* TITULO */
+.tituloPrincipalPersonal {
+  text-align: center;
+  font-size: 40px;
+  margin: 40px 0;
+  color: #123a5a;
+}
+
+.Médicos{
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENEDOR */
+.contenedorFoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Evita que las imágenes de los doctores se estiren o distorsionen */
+  object-position: center top; /* Centra el encuadre en el rostro del doctor */
+}
+
+/* GRID */
+.tarjetaDoctor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* TARJETAS */
+.tarjeta1 {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.tarjeta1:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGEN */
+.tarjeta1 img {
+  width: 100%;
+  height: 240px; /* Alargamos el contenedor para que la foto respire mejor */
+  object-fit: cover; /* Mantiene la proporción original sin distorsionar */
+  object-position: center 15%; /* 🔥 Sube el encuadre para enfocar perfectamente el rostro del doctor */
+  border-radius: 10px;
+  background-color: #f8fafc; /* Fondo neutro por si alguna imagen tiene transparencias */
+}
+
+/* NOMBRE */
+.tarjeta1 h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+/* ESPECIALIDAD */
+.especialidad {
+  color: #1f4e8a;
+  font-weight: bold;
+}
+
+/* DESCRIPCIÓN */
+.descripcionDoctor {
+  font-size: 13px;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* BOTON */
+.botondetalles {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid #123a5a;
+  text-decoration: none;
+  color: #123a5a;
+  font-size: 14px;
+  transition: 0.3s;
+  background: white;
+}
+
+.botondetalles:hover {
+  background: #123a5a;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+/* LINKS */
+.main-nav a {
+  text-decoration: none;
+  color: #123a5a;
+  font-weight: bold;
+  position: relative;
+  padding: 5px;
+}
+
+/* EFECTO HOVER 🔥 */
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #1f4e8a;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.main-nav a:hover {
+  color: #1f4e8a;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+/* LINKS */
+.menu a {
+  text-decoration: none;
+  color: #123a5a;
+  font-weight: bold;
+  position: relative;
+}
+
+/* EFECTO HOVER */
+.menu a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #1f4e8a;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
 }

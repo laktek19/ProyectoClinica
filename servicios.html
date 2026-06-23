@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios Médicos</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="cabecera">
+      <div class="contentedorCabecera">
+        <a href="#" class="Icono">
+          <img src="images/logo.png" alt="Logo de la clínica" />
+        </a>
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html" class="nav__link">Inicio</a></li>
+            <li><a href="personalmedico.html" class="nav__link">Profesionales Médicos</a></li>
+            <li><a href="servicios.html" class="nav__link nav__link--active">Servicios</a></li>
+            <li><a href="paginaweb.html" class="nav__link">Sedes</a></li>
+            <li><a href="especialidades.html" class="nav__link">Especialidades</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--aca termina la cabecera-->
+
+    <main>
+      <section class="services-section" id="servicios">
+        <h1>Nuestros Servicios</h1>
+
+        <div class="service-tabs" role="tablist" aria-label="Categorías de servicios">
+          <button class="tab-button active" type="button" data-service="medica">
+            Atención Médica
+          </button>
+          <button class="tab-button" type="button" data-service="laboratorio">
+            Laboratorio
+          </button>
+          <button class="tab-button" type="button" data-service="imagenes">
+            Imágenes
+          </button>
+        </div>
+
+        <div class="cards-row">
+          <article class="service-card">
+            <div class="card-image">
+              <img class="card-img" src="" alt="Médico Virtual" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Médico Virtual</h3>
+              <p class="card-desc">
+                Recibe atención médica de manera segura y rápida desde donde
+                estés, a través de una videollamada. Nuestro servicio de
+                Médico Virtual te ofrece diagnóstico, tratamiento y
+                recomendaciones sin necesidad de visitar la clínica.
+              </p>
+              <ul class="card-list">
+                <li>Atención desde cualquier lugar.</li>
+                <li>Reserva fácil por web, app o teléfono.</li>
+                <li>Recetas y seguimiento médico online.</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-outline" href="#">Conoce más</a>
+                <a class="btn btn-primary" href="#">Agendar Cita</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-image">
+              <img class="card-img" src="" alt="Atención a domicilio" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Atención a domicilio</h3>
+              <p class="card-desc">
+                Disfruta de atención médica especializada en la comodidad de
+                tu hogar, ideal para diagnósticos y tratamientos de baja
+                complejidad. Un médico general o especialista acudirá a tu
+                domicilio en el horario que elijas.
+              </p>
+              <ul class="card-list">
+                <li>Diagnóstico y tratamiento en casa.</li>
+                <li>Reservas por web, app o llamada.</li>
+                <li>Atención en zonas específicas de Lima.</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-outline" href="#">Conoce más</a>
+                <a class="btn btn-primary" href="#">Agendar Cita</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="card-image">
+              <img class="card-img" src="" alt="Hospitalización domiciliaria" />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Hospitalización domiciliaria</h3>
+              <p class="card-desc">
+                Nuestro programa de Hospitalización Domiciliaria lleva la
+                atención hospitalaria completa a tu hogar. Recibirás
+                monitoreo, tratamientos y cuidados personalizados garantizando
+                tu recuperación en un entorno seguro.
+              </p>
+              <ul class="card-list">
+                <li>Monitoreo médico y terapias.</li>
+                <li>Soporte multidisciplinario 24/7.</li>
+                <li>Coordinación con tu seguro o servicio particular.</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-outline" href="#">Conoce más</a>
+                <a class="btn btn-primary" href="#">Agendar Cita</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="piePagina">
+      <div class="contenedorPiePagina">
+        <div class="parteSuperiorFooter">
+          <div class="izquierdaFooter">
+            <div class="marcaFooter">
+              <div class="logoFooter">
+                <img src="images/icono.png" />
+              </div>
+              <div>
+                <strong class="tituloFooter"></strong>
+                <div class="subtituloFooter">CLÍNICA ALCARE</div>
+              </div>
+            </div>
+            <p class="notaFooter">
+              Comprometidos con su salud. 9:00 to 18:00 hrs.
+            </p>
+            <div class="redesSociales">
+              <a href="#" class="icon">f</a>
+              <a href="#" class="icon">t</a>
+              <a href="#" class="icon">in</a>
+              <a href="#" class="icon">ig</a>
+            </div>
+          </div>
+          <div class="centroFooter">
+            <div class="columnaFooter">
+              <h4>Enlaces rápidos</h4>
+              <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Profesionales</a></li>
+                <li><a href="#">Especialidades</a></li>
+              </ul>
+            </div>
+            <div class="columnaFooter">
+              <h4>Servicios</h4>
+              <ul>
+                <li><a href="#">Médico Virtual</a></li>
+                <li><a href="#">Atención a Domicilio</a></li>
+                <li><a href="#">Hospitalización</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="derechaFooter">
+            <h4>Contáctenos</h4>
+            <p>Av. Ejemplo 199<br />Lima, Perú</p>
+            <p>000 123 457<br />info@clinica.pe</p>
+          </div>
+        </div>
+        <div class="parteInferiorFooter">
+          <div>© 2026 Clínica Clínica. Todos los derechos reservados.</div>
+          <div class="linksFooter">
+            <a href="#">Política de privacidad</a> | <a href="#">Términos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const serviceData = {
+      medica: [
+        {
+          title: "Médico Virtual",
+          description:
+            "Recibe atención médica de manera segura y rápida desde donde estés, a través de una videollamada. Nuestro servicio de Médico Virtual te ofrece diagnóstico, tratamiento y recomendaciones sin necesidad de visitar la clínica.",
+          features: [
+            "Atención desde cualquier lugar.",
+            "Reserva fácil por web, app o teléfono.",
+            "Recetas y seguimiento médico online.",
+          ],
+          image: "images/servicio_medicovirtual_cc_9e471a79f1.webp",
+        },
+        {
+          title: "Atención a domicilio",
+          description:
+            "Disfruta de atención médica especializada en la comodidad de tu hogar, ideal para diagnósticos y tratamientos de baja complejidad. Un médico general o especialista acudirá a tu domicilio en el horario que elijas.",
+          features: [
+            "Diagnóstico y tratamiento en casa.",
+            "Reservas por web, app o llamada.",
+            "Atención en zonas específicas de Lima.",
+          ],
+          image: "images/servicio_atenciondomicilio_8b6fc50594.webp",
+        },
+        {
+          title: "Hospitalización domiciliaria",
+          description:
+            "Nuestro programa de Hospitalización Domiciliaria lleva la atención hospitalaria completa a tu hogar. Recibirás monitoreo, tratamientos y cuidados personalizados garantizando tu recuperación en un entorno seguro.",
+          features: [
+            "Monitoreo médico y terapias.",
+            "Soporte multidisciplinario 24/7.",
+            "Coordinación con tu seguro o servicio particular.",
+          ],
+          image: "images/Hospitalizacion_domiciliaria_2aed164b08.webp",
+        },
+      ],
+      laboratorio: [
+        {
+          title: "Exámenes de laboratorio",
+          description:
+            "Realiza pruebas clínicas completas con tecnología de punta. Resultados rápidos y confiables para diagnósticos precisos.",
+          features: [
+            "Toma de muestras profesional.",
+            "Análisis clínicos en laboratorio certificado.",
+            "Informe rápido en formato digital.",
+          ],
+          image: "images/LaboratoryTests_share.jpg",
+        },
+        {
+          title: "Panel de bioquímica",
+          description:
+            "Evalúa tu salud con análisis de sangre, colesterol, glucosa y más. Un paquete completo para chequeos preventivos.",
+          features: [
+            "Panel completo de química sanguínea.",
+            "Interpretación por especialistas.",
+            "Recomendaciones personalizadas.",
+          ],
+          image: "images/lab4.jpg",
+        },
+        {
+          title: "Pruebas rápidas",
+          description:
+            "Pruebas exprés para detección de infecciones y enfermedades comunes. Seguridad y resultados en pocas horas.",
+          features: [
+            "Pruebas rápidas de antígenos.",
+            "Protocolos de bioseguridad.",
+            "Entrega de resultados online.",
+          ],
+          image:
+            "images/equipo-medico-prueba-sangre-tubos-contenedores_179755-436.jpg",
+        },
+      ],
+      imagenes: [
+        {
+          title: "Rayos X",
+          description:
+            "Obtén diagnósticos claros con estudios de Rayos X. Ideal para detectar lesiones óseas y cambios en el tórax.",
+          features: [
+            "Equipos modernos de radiología.",
+            "Toma rápida y segura.",
+            "Interpretación por radiólogos expertos.",
+          ],
+          image:
+            "images/un-tecnico-de-rayos-x-en-un-hospital-realizando-una-radiografia-a-un-paciente.jpg",
+        },
+        {
+          title: "Ecografía",
+          description:
+            "Estudios ecográficos para control prenatal, abdominal y musculoesquelético con resultados detallados.",
+          features: [
+            "Ecografías 2D y 3D.",
+            "Evaluación de órganos y tejidos.",
+            "Informe clínico completo.",
+          ],
+          image: "images/ecografia-pelvica-1.jpg",
+        },
+        {
+          title: "Resonancia magnética",
+          description:
+            "Imágenes avanzadas para evaluaciones profundas del cuerpo. Ideal para neurología y ortopedia.",
+          features: [
+            "Alta resolución diagnóstica.",
+            "Protocolos seguros.",
+            "Atención especializada.",
+          ],
+          image: "images/servicios_cdi_2552854120.webp",
+        },
+      ],
+    };
+
+    const cardElements = document.querySelectorAll(".service-card");
+    const tabButtons = document.querySelectorAll(".tab-button");
+
+    function renderCategory(category) {
+      const cards = serviceData[category] || serviceData.medica;
+
+      cardElements.forEach((cardElement, index) => {
+        const cardData = cards[index];
+        if (!cardData) return;
+
+        cardElement.querySelector(".card-title").textContent = cardData.title;
+        cardElement.querySelector(".card-desc").textContent =
+          cardData.description;
+
+        const list = cardElement.querySelector(".card-list");
+        list.innerHTML = "";
+        cardData.features.forEach((feature) => {
+          const li = document.createElement("li");
+          li.textContent = feature;
+          list.appendChild(li);
+        });
+
+        const img = cardElement.querySelector(".card-img");
+        img.src = cardData.image;
+        img.alt = cardData.title;
+      });
+    }
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        tabButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+        renderCategory(button.dataset.service);
+      });
+    });
+
+    renderCategory("medica");
+  </script>
+</body>
+
+</html>
