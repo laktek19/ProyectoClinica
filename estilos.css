@@ -222,9 +222,10 @@ body {
   padding: 30px;
   margin: 10px auto;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   text-align: left;
+  border: 1px solid #69696942
 }
 
 .servicio h3{
